@@ -46,6 +46,13 @@ drug_users <- filter(triUmp, DrugUser == "yes")
 barchartGC(~infected + treatment,data=drug_users)
 barchartGC(~infected + treatment,data=drug_users, type="percent")
 ```
+
+We have created two bar charts to compare the data, the first shows total number or people who are involved in the analysis.
+
+In chart 1 we see that most people who are drug user, do not contract Aids however it doesn't show us much about the effectiveness of the drug.
+
+In chart 2 we have a clearer picture because it shows the data as a percentage. In this test we see that the treatment group has lower incidence of Aids compared to the placebo group.
+
 ### Numerical Descriptive Results
 
 
