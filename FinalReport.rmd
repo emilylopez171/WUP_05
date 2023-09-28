@@ -17,15 +17,19 @@ triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the DrugUsers, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
-```{r inlude=FALSE}
+$H_0$: There is no difference in the data when comparing treatment and infection rate.
 
-drug_users <- filter(triUmp, DrugUser == "yes")
+$H_A$ There is a difference in the data when comparing treatment and infection rate.
 
-drug_users
 
-```
 # Methods
 
+We will use the Dyplr tool "Filter" to create a subset of the data, storing only data where drug user = "yes".
+We will then use the CandP helper files to get R code to show a combination of:  graphical, numerical, and inferential to test the null hypotheseis.
+
+```{r inlude=FALSE}
+drug_users <- filter(triUmp, DrugUser == "yes")
+```
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
 # Results
@@ -39,7 +43,7 @@ drug_users
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
 ```{r}
-barchartGC(~infected + treatment,data=drug_users,)
+barchartGC(~infected + treatment,data=drug_users)
 barchartGC(~infected + treatment,data=drug_users, type="percent")
 ```
 ### Numerical Descriptive Results
