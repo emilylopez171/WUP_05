@@ -59,7 +59,12 @@ colPerc(table1)
 
 ```{r}
 chisq.test(table1)
+```
+```{r}
 chisqtestGC(table1)
+```
+
+```{r}
 fisher.test(table1)
 ```
 
