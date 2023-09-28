@@ -64,6 +64,12 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+In this version of the results we see the number of people in each group and the rate at which they contracted Aids.
+
+In the infected group, we see that there are approximately three times as many cases of aids in the placebo group as opposed to the treatment group.
+
+
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
